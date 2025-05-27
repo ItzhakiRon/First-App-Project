@@ -1,0 +1,142 @@
+@startuml
+class FragmentHome {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
+- {static} String SHARED_PREFS_NAME
+- {static} String KEY_EMAIL
+- {static} String KEY_USERNAME
+~ TextView textEmail
+~ TextView textUsername
+~ TextView textDate
+~ MyDatabaseHelper databaseHelper
+}
+
+class FragmentContent {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
+~ RecyclerView recyclerView
+~ List<DataClass> dataList
+~ MyAdapter adapter
+~ DataClass androidData
+~ SearchView searchView
+}
+
+class MyAdapter {
+- Context context
+- List<DataClass> dataList
+}
+
+class MyViewHolder {
+~ ImageView recImage
+~ TextView recTitle
+~ CardView recCard
+}
+
+class SplashActivity {
+}
+class DetailActivity {
+~ TextView detailDesc
+~ ImageView detailImage
+~ Button speakButton
+~ TextToSpeech tts
+}
+
+class SignupActivity {
+~ ActivitySignupBinding binding
+~ MyDatabaseHelper databaseHelper
+- {static} String SHARED_PREFS_NAME
+- {static} String KEY_EMAIL
+- {static} String KEY_USERNAME
+}
+
+class IntroActivity {
+~ TextView button
+}
+
+class FragmentSettings {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
+}
+
+class DataClass {
+- String dataTitle
+- int dataDesc
+- String dataLang
+- int dataImage
+}
+
+class MainActivity {
+~ ViewPager2 pagerMain
+~ ArrayList<Fragment> fragmentArrayList
+~ BottomNavigationView bottomNav
+~ DrawerLayout drawerLayout
+~ NavigationView navigationView
+~ ActionBarDrawerToggle drawerToggle
+- boolean backPressedOnce
+}
+
+class UpdateActivity {
+~ MyDatabaseHelper databaseHelper
+~ EditText editUsername
+~ String userEmail
+- {static} String SHARED_PREFS_NAME
+- {static} String KEY_EMAIL
+- {static} String KEY_USERNAME
+}
+
+class AdapterViewPager {
+~ ArrayList<Fragment> arr
+}
+
+class FragmentGallery {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
+}
+
+class LoginActivity {
+~ ActivityLoginBinding binding
+~ MyDatabaseHelper databaseHelper
+~ SharedPreferences sharedPreferences
+- {static} String SHARED_PREFS_NAME
+- {static} String KEY_EMAIL
+- {static} String KEY_USERNAME
+}
+
+class SigncheckActivity {
+~ ImageView done
+- {static} String SHARED_PREFS_NAME
+- {static} String KEY_EMAIL
+- {static} String KEY_USERNAME
+}
+
+class MyDatabaseHelper {
++ {static} String databaseName
+}
+
+
+
+Fragment <|-- FragmentHome
+Fragment <|-- FragmentContent
+Adapter <|-- MyAdapter
+ViewHolder <|-- MyViewHolder
+AppCompatActivity <|-- SplashActivity
+AppCompatActivity <|-- DetailActivity
+AppCompatActivity <|-- SignupActivity
+AppCompatActivity <|-- IntroActivity
+Fragment <|-- FragmentSettings
+AppCompatActivity <|-- MainActivity
+AppCompatActivity <|-- UpdateActivity
+FragmentStateAdapter <|-- AdapterViewPager
+Fragment <|-- FragmentGallery
+AppCompatActivity <|-- LoginActivity
+AppCompatActivity <|-- SigncheckActivity
+SQLiteOpenHelper <|-- MyDatabaseHelper
+@enduml

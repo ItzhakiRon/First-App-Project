@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".FragmentSettings">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/top_settings"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHAT WOULD YOU LIKE TO DO?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/buttonChangeUserData"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Change User Data"
+            android:drawableLeft="@drawable/ic_baseline_change_24"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonDeleteUser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Delete User"
+            android:drawableLeft="@drawable/ic_baseline_delete_24"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:drawableLeft="@drawable/ic_baseline_logout_24"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bottom_settings" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WeaponZ</string>
+
+    <string name="rifles">Rifles are firearms designed for precision shooting, with a long barrel
+        that has spiral grooves, known as rifling. This design causes the bullet to spin,
+        stabilizing its flight and increasing accuracy over long distances.
+        Rifles can be single-shot or capable of firing multiple rounds semi-automatically
+        or fully automatically. They are commonly used in hunting, sports shooting, and by
+        military and law enforcement agencies. Examples include the AK-47, known for its durability
+        and use in various conflicts, and the M16, standard issue in many military forces.</string>
+
+    <string name="snipers">Snipers are highly trained marksmen who use sniper rifles to engage targets
+        from long distances, often beyond the target\'s awareness. They specialize in stealth,
+        camouflage, and precision shooting, often providing critical reconnaissance for military
+        operations. Sniper rifles are equipped with high-magnification scopes and are designed
+        for extreme accuracy. The AWP (Arctic Warfare Police) and SCAR 20 are known for their
+        accuracy and are used in military and law enforcement.</string>
+
+    <string name="guns">The term "guns" encompasses a wide range of firearms, from small handguns
+        to large artillery pieces. They operate by propelling projectiles through a metal tube using
+        explosive force. Guns are used for personal defense, law enforcement, and warfare. Handguns
+        like the Desert Eagle is a powerful handgun known for its stopping power, while the Five Seven
+        is praised for its lightweight design and armor-piercing capabilities.</string>
+
+    <string name="knives">Knives are tools with a cutting edge blade fixed to a handle, used for
+        various purposes including cooking, crafting, and as weapons. They range from simple pocket
+        knives to specialized combat knives. Examples include the pocket knife, convenient for everyday
+        carry, and the hunting knife, designed for processing game in the field.</string>
+
+    <string name="selfdefense">Self-defense weapons are designed to protect individuals from harm.
+        They can be non-lethal, like pepper spray and stun guns, which incapacitate attackers
+        temporarily, or lethal, like firearms. Examples include brass knuckles, which can be worn to
+        increase the force of a punch, and stun guns, which deliver an electric shock to incapacitate
+        an attacker.</string>
+
+    <string name="home">Thank you for choosing and using our application. We are very happy to provide
+        you our good info about every type of weapons.If you have any question, please reach to the
+        main creator of this app which is me. Enjoy my app</string>
+</resources>

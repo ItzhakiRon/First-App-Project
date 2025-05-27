@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".UpdateActivity">
+
+    <ImageView
+        android:id="@+id/top_background"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32sp"
+        android:text="Change \nPersonal \nData"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <EditText
+            android:id="@+id/update_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#707070"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/update_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#707070"
+            android:ems="15"
+            android:background="@drawable/edittext_background"
+            android:inputType="text"
+            android:hint="Update Username" />
+
+
+        <EditText
+            android:id="@+id/update_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#707070"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="phone"
+            android:hint="Update Phone"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/update_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#707070"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:hint="Update Password" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            style="@android:style/Widget.Button"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Update"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
